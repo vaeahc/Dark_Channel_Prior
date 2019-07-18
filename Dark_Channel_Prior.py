@@ -86,7 +86,7 @@ def Guided_filtering(t, img_gray, width, sigma = 0.0001):
 
 if __name__ == '__main__':
     
-    img = cv2.imread('IMG_2170.BMP') / 255
+    img = cv2.imread('forest.jpg') / 255
     img_gray = cv2.imread('IMG_2170.BMP', 0) / 255
     plt.imshow(img[:, :, ::-1])
     plt.show()
