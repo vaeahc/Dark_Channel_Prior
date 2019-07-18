@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def cal_Dark_Channel(im, width = 15):
-    #参数按照论文中设置,无导向滤波和soft matting
+    
     im_dark = np.min(im, axis = 2)
     border = int((width - 1) / 2)
     im_dark_1 = cv2.copyMakeBorder(im_dark, border, border, border, border, cv2.BORDER_DEFAULT)
